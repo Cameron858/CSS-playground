@@ -1,13 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: white;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: auto;
 }
 
-.btn {
+.btn1 {
     display: block;
     border: none;
     border-radius: 5em;
@@ -19,10 +23,27 @@ body {
     transition-duration: 0.5s;
     cursor: pointer;
     box-shadow: 2px 2px gray;
+    margin: 50px;
 }
 
-.btn:hover {
+.btn1:hover {
     background-color: rgb(128, 255, 212);
     color:  black;
     box-shadow: 2px 2px 2px black;
+}
+
+.btn2 {
+    background-color: rgb(230, 230, 230);
+    font-size: 20px;
+    padding: 1em 2em;
+    border: none;
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1em;
+    transition-duration: 0.1s;
+}
+
+.btn2:active {
+    transform: translateY(5px);
+    border-bottom: 0px solid black;
 }
